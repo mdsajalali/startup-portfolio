@@ -1,0 +1,65 @@
+body {
+  display: grid;
+  min-height: 100vh;
+}
+
+.hero {
+  align-self: start;
+}
+
+.footerWrapper {
+  align-self: end;
+}
+
+.text {
+  font-family: var(--font-2);
+  font-size: var(--sub);
+}
+
+/**
+* ! style rules for sectionTwo
+**/
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
+
+label {
+  font-family: var(--font-2);
+  font-size: var(--sub);
+}
+
+input,
+textarea {
+  padding: 10px 20px;
+  margin: 8px 0;
+  background-color: #eee;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border: 1.5px solid #212529;
+  font-size: var(--h6);
+  text-transform: capitalize;
+}
+
+ 
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionTwo__left {
+    order: 1;
+  }
+  .sectionTwo__right {
+    order: 0;
+  }
+}
